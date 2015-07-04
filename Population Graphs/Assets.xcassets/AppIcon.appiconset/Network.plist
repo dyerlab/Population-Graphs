@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Nodes</key>
+	<dict>
+		<key>Bass Pro</key>
+		<dict>
+			<key>Latitude</key>
+			<real>37.710806</real>
+			<key>Longitude</key>
+			<real>-77.449333</real>
+		</dict>
+		<key>South Anna</key>
+		<dict>
+			<key>Latitude</key>
+			<real>37.800511</real>
+			<key>Longitude</key>
+			<real>-77.42339</real>
+		</dict>
+		<key>Kreggers</key>
+		<dict>
+			<key>Longitude</key>
+			<real>-77.437147</real>
+			<key>Latitude</key>
+			<real>37.691362</real>
+		</dict>
+		<key>The Farm</key>
+		<dict>
+			<key>Longitude</key>
+			<real>-77.45053</real>
+			<key>Latitude</key>
+			<string>37.741033</string>
+		</dict>
+	</dict>
+	<key>Edges</key>
+	<array>
+		<dict>
+			<key>Node 1</key>
+			<string>South Anna</string>
+			<key>Node 2</key>
+			<string>The Farm</string>
+			<key>Weight</key>
+			<integer>1</integer>
+			<key>Directed</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Node 1</key>
+			<string>The Farm</string>
+			<key>Node 2</key>
+			<string>Bass Pro</string>
+			<key>Weight</key>
+			<integer>2</integer>
+			<key>Directed</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Node 1</key>
+			<string>The Farm</string>
+			<key>Node 2</key>
+			<string>Kreggers</string>
+			<key>Weight</key>
+			<integer>3</integer>
+			<key>Directed</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Node 1</key>
+			<string>South Anna</string>
+			<key>Node 2</key>
+			<string>Bass Pro</string>
+			<key>Weight</key>
+			<integer>2</integer>
+			<key>Directed</key>
+			<false/>
+		</dict>
+	</array>
+</dict>
+</plist>
