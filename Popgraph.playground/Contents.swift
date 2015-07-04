@@ -1,55 +1,58 @@
-//
-//  IO.swift
-//  Population Graphs
-//
-//  Created by Rodney Dyer on 7/4/15.
-//  Copyright © 2015 Rodney Dyer. All rights reserved.
-//
+//: Playground - noun: a place where people can play
 
-import Foundation
+import Cocoa
+
+var str = "Hello, playground"
 
 
+let myDict = [
+    "Nodes":[
+        "A":"Bob",
+        "B":"Alice",
+        "C":"Fred"],
+    "Edges":[
+        [
+            "Node 1":"A",
+            "Node 2":"B",
+            "Weight":6.4
+            ],
+        [
+            "Node 1":"C",
+            "Node 2":"B",
+            "Weight":2.4
+        ],
+        [
+            "Node 1":"A",
+            "Node 2":"C",
+            "Weight":3.4
+        ] ]
+]
 
-func makeGraphForViewing() -> SpatialGraph! {
-    let graph: SpatialGraph = SpatialGraph()
-    
-    let n1 = Node(label: "Bass Pro")
-    n1.longitude = -77.449333
-    n1.latitude = 37.710806
-    graph.nodes.append(n1)
-    
-    let n2 = Node(label: "South Anna")
-    n2.longitude = -77.42339
-    n2.latitude = 37.800511
-    graph.nodes.append(n2)
-    
 
-    let n3 = Node(label: "Kreggers")
-    n3.longitude = -77.437147
-    n3.latitude = 37.691362
-    graph.nodes.append(n3)
-    
+print(myDict["Nodes"])
 
-    let n4 = Node(label: "The Farm")
-    n4.longitude = -77.45053
-    n4.latitude = 37.741033
-    graph.nodes.append(n4)
-    
-    let e1 = Edge(n1: n1, n2: n2, weight: 1.0)
-    let e2 = Edge(n1: n1, n2: n3, weight: 1.0)
-    let e3 = Edge(n1: n2, n2: n3, weight: 1.0)
-    let e4 = Edge(n1: n3, n2: n4, weight: 2.0)
-    graph.edges.append(e1)
-    graph.edges.append(e2)
-    graph.edges.append(e3)
-    graph.edges.append(e4)
-    
-
-    
-    return graph
+var nodes = myDict["Nodes"] as! NSDictionary
+var edges = myDict["Edges"] as! NSArray
+for e in edges {
+    print(e)
 }
 
-func loadGraphFromPlist( path: String ) -> SpatialGraph! {
+
+var path = "/Users/rodney/Desktop/Population Graphs/Population Graphs/Network.plist"
+if let myDict = NSDictionary(contentsOfFile: path) {
+    
+    let nodes = myDict["Nodes"] as! NSDictionary
+    print(nodes.description)
+    
+    
+    
+}
+else {
+    print("Cannot read dictionary")
+}
+
+/*
+func loadGraphFromPlist( path: String ) -> Graph! {
     
     
     if let myDict = NSDictionary(contentsOfFile: path) {
@@ -61,7 +64,7 @@ func loadGraphFromPlist( path: String ) -> SpatialGraph! {
             let node: Node = Node(label: name as! String)
             
             node.longitude = (values as! NSDictionary).valueForKey("Longitude") as! Double
-            node.latitude =  (values as! NSDictionary).valueForKey("Latitude") as! Double 
+            node.latitude =  (values as! NSDictionary).valueForKey("Latitude") as! Double
             
             graph.nodes.append(node)
         }
@@ -93,3 +96,6 @@ func loadGraphFromPlist( path: String ) -> SpatialGraph! {
     
     return nil
 }
+*/
+
+

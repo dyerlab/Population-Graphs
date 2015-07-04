@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import Cocoa
+
+protocol Drawable {
+    func moveTo(x: Double, y: Double)
+    func draw()
+}

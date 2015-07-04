@@ -30,7 +30,7 @@
 			<key>Longitude</key>
 			<real>-77.45053</real>
 			<key>Latitude</key>
-			<string>37.741033</string>
+			<real>37.741033</real>
 		</dict>
 	</dict>
 	<key>Edges</key>

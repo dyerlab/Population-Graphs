@@ -13,6 +13,28 @@
 		2A13117E1B47EE7B004C24D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A13117C1B47EE7B004C24D0 /* Main.storyboard */; };
 		2A1311891B47EE7B004C24D0 /* Population_GraphsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311881B47EE7B004C24D0 /* Population_GraphsTests.swift */; };
 		2A1311941B47EE7B004C24D0 /* Population_GraphsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311931B47EE7B004C24D0 /* Population_GraphsUITests.swift */; };
+		2A1311AB1B47F374004C24D0 /* Network.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A1311AA1B47F374004C24D0 /* Network.plist */; };
+		2A1311AC1B47F374004C24D0 /* Network.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A1311AA1B47F374004C24D0 /* Network.plist */; };
+		2A1311AD1B47F374004C24D0 /* Network.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A1311AA1B47F374004C24D0 /* Network.plist */; };
+		2A1311AF1B47F4AE004C24D0 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311AE1B47F4AE004C24D0 /* Node.swift */; };
+		2A1311B01B47F4AE004C24D0 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311AE1B47F4AE004C24D0 /* Node.swift */; };
+		2A1311B11B47F4AE004C24D0 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311AE1B47F4AE004C24D0 /* Node.swift */; };
+		2A1311B31B47F596004C24D0 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311B21B47F596004C24D0 /* Edge.swift */; };
+		2A1311B41B47F596004C24D0 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311B21B47F596004C24D0 /* Edge.swift */; };
+		2A1311B51B47F596004C24D0 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311B21B47F596004C24D0 /* Edge.swift */; };
+		2A1311B81B47F663004C24D0 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311B71B47F663004C24D0 /* Graph.swift */; };
+		2A1311B91B47F663004C24D0 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311B71B47F663004C24D0 /* Graph.swift */; };
+		2A1311BA1B47F663004C24D0 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311B71B47F663004C24D0 /* Graph.swift */; };
+		2A1311BC1B47F7BD004C24D0 /* IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311BB1B47F7BD004C24D0 /* IO.swift */; };
+		2A1311BD1B47F7BD004C24D0 /* IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311BB1B47F7BD004C24D0 /* IO.swift */; };
+		2A1311BE1B47F7BD004C24D0 /* IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311BB1B47F7BD004C24D0 /* IO.swift */; };
+		2A1311C11B480953004C24D0 /* SpatialGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311C01B480953004C24D0 /* SpatialGraph.swift */; };
+		2A1311C21B480953004C24D0 /* SpatialGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311C01B480953004C24D0 /* SpatialGraph.swift */; };
+		2A1311C31B480953004C24D0 /* SpatialGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311C01B480953004C24D0 /* SpatialGraph.swift */; };
+		2A1311C51B480C3C004C24D0 /* SpatialObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311C41B480C3C004C24D0 /* SpatialObject.swift */; };
+		2A1311C61B480C3C004C24D0 /* SpatialObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311C41B480C3C004C24D0 /* SpatialObject.swift */; };
+		2A1311C71B480C3C004C24D0 /* SpatialObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311C41B480C3C004C24D0 /* SpatialObject.swift */; };
+		2AE1A97F1B4810F40088DB40 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1A97E1B4810F40088DB40 /* Drawable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +67,15 @@
 		2A13118F1B47EE7B004C24D0 /* Population GraphsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Population GraphsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1311931B47EE7B004C24D0 /* Population_GraphsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Population_GraphsUITests.swift; sourceTree = "<group>"; };
 		2A1311951B47EE7B004C24D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A1311AA1B47F374004C24D0 /* Network.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Network.plist; sourceTree = "<group>"; };
+		2A1311AE1B47F4AE004C24D0 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Classes/Node.swift; sourceTree = "<group>"; };
+		2A1311B21B47F596004C24D0 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Classes/Edge.swift; sourceTree = "<group>"; };
+		2A1311B71B47F663004C24D0 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		2A1311BB1B47F7BD004C24D0 /* IO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IO.swift; sourceTree = "<group>"; };
+		2A1311BF1B47FB69004C24D0 /* Popgraph.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Popgraph.playground; sourceTree = "<group>"; };
+		2A1311C01B480953004C24D0 /* SpatialGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpatialGraph.swift; sourceTree = "<group>"; };
+		2A1311C41B480C3C004C24D0 /* SpatialObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpatialObject.swift; sourceTree = "<group>"; };
+		2AE1A97E1B4810F40088DB40 /* Drawable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +106,7 @@
 		2A13116A1B47EE7B004C24D0 = {
 			isa = PBXGroup;
 			children = (
+				2A1311BF1B47FB69004C24D0 /* Popgraph.playground */,
 				2A1311751B47EE7B004C24D0 /* Population Graphs */,
 				2A1311871B47EE7B004C24D0 /* Population GraphsTests */,
 				2A1311921B47EE7B004C24D0 /* Population GraphsUITests */,
@@ -95,11 +127,13 @@
 		2A1311751B47EE7B004C24D0 /* Population Graphs */ = {
 			isa = PBXGroup;
 			children = (
+				2A1311A11B47EED0004C24D0 /* Components */,
 				2A1311761B47EE7B004C24D0 /* AppDelegate.swift */,
 				2A1311781B47EE7B004C24D0 /* ViewController.swift */,
 				2A13117A1B47EE7B004C24D0 /* Assets.xcassets */,
 				2A13117C1B47EE7B004C24D0 /* Main.storyboard */,
 				2A13117F1B47EE7B004C24D0 /* Info.plist */,
+				2A1311AA1B47F374004C24D0 /* Network.plist */,
 			);
 			path = "Population Graphs";
 			sourceTree = "<group>";
@@ -120,6 +154,60 @@
 				2A1311951B47EE7B004C24D0 /* Info.plist */,
 			);
 			path = "Population GraphsUITests";
+			sourceTree = "<group>";
+		};
+		2A1311A11B47EED0004C24D0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2A1311A41B47EEFF004C24D0 /* Analyses */,
+				2A1311A21B47EEDE004C24D0 /* Graph */,
+				2A1311A31B47EEF3004C24D0 /* Matrix */,
+				2A1311C81B480CC4004C24D0 /* Spatial */,
+				2A1311A51B47EF12004C24D0 /* UI */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		2A1311A21B47EEDE004C24D0 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				2A1311AE1B47F4AE004C24D0 /* Node.swift */,
+				2A1311B21B47F596004C24D0 /* Edge.swift */,
+				2A1311B71B47F663004C24D0 /* Graph.swift */,
+			);
+			name = Graph;
+			sourceTree = "<group>";
+		};
+		2A1311A31B47EEF3004C24D0 /* Matrix */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Matrix;
+			sourceTree = "<group>";
+		};
+		2A1311A41B47EEFF004C24D0 /* Analyses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Analyses;
+			sourceTree = "<group>";
+		};
+		2A1311A51B47EF12004C24D0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2A1311BB1B47F7BD004C24D0 /* IO.swift */,
+				2AE1A97E1B4810F40088DB40 /* Drawable.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		2A1311C81B480CC4004C24D0 /* Spatial */ = {
+			isa = PBXGroup;
+			children = (
+				2A1311C01B480953004C24D0 /* SpatialGraph.swift */,
+				2A1311C41B480C3C004C24D0 /* SpatialObject.swift */,
+			);
+			name = Spatial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +277,7 @@
 				TargetAttributes = {
 					2A1311721B47EE7B004C24D0 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 2D28XM92C4;
 					};
 					2A1311831B47EE7B004C24D0 = {
 						CreatedOnToolsVersion = 7.0;
@@ -227,6 +316,7 @@
 			files = (
 				2A13117B1B47EE7B004C24D0 /* Assets.xcassets in Resources */,
 				2A13117E1B47EE7B004C24D0 /* Main.storyboard in Resources */,
+				2A1311AB1B47F374004C24D0 /* Network.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1311AC1B47F374004C24D0 /* Network.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1311AD1B47F374004C24D0 /* Network.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,8 +343,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1311C51B480C3C004C24D0 /* SpatialObject.swift in Sources */,
+				2A1311AF1B47F4AE004C24D0 /* Node.swift in Sources */,
 				2A1311791B47EE7B004C24D0 /* ViewController.swift in Sources */,
+				2A1311B31B47F596004C24D0 /* Edge.swift in Sources */,
+				2A1311C11B480953004C24D0 /* SpatialGraph.swift in Sources */,
 				2A1311771B47EE7B004C24D0 /* AppDelegate.swift in Sources */,
+				2AE1A97F1B4810F40088DB40 /* Drawable.swift in Sources */,
+				2A1311B81B47F663004C24D0 /* Graph.swift in Sources */,
+				2A1311BC1B47F7BD004C24D0 /* IO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +359,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1311B91B47F663004C24D0 /* Graph.swift in Sources */,
+				2A1311C21B480953004C24D0 /* SpatialGraph.swift in Sources */,
 				2A1311891B47EE7B004C24D0 /* Population_GraphsTests.swift in Sources */,
+				2A1311B01B47F4AE004C24D0 /* Node.swift in Sources */,
+				2A1311BD1B47F7BD004C24D0 /* IO.swift in Sources */,
+				2A1311B41B47F596004C24D0 /* Edge.swift in Sources */,
+				2A1311C61B480C3C004C24D0 /* SpatialObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +373,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1311BA1B47F663004C24D0 /* Graph.swift in Sources */,
+				2A1311C31B480953004C24D0 /* SpatialGraph.swift in Sources */,
 				2A1311941B47EE7B004C24D0 /* Population_GraphsUITests.swift in Sources */,
+				2A1311B11B47F4AE004C24D0 /* Node.swift in Sources */,
+				2A1311BE1B47F7BD004C24D0 /* IO.swift in Sources */,
+				2A1311B51B47F596004C24D0 /* Edge.swift in Sources */,
+				2A1311C71B480C3C004C24D0 /* SpatialObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,11 +494,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Rodney Dyer (2D28XM92C4)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Population Graphs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.Population-Graphs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7d72341b-6005-4819-bf95-438e6bde98c4";
 			};
 			name = Debug;
 		};
@@ -395,11 +508,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Rodney Dyer (2D28XM92C4)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Population Graphs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.Population-Graphs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7d72341b-6005-4819-bf95-438e6bde98c4";
 			};
 			name = Release;
 		};
@@ -474,6 +589,7 @@
 				2A13119A1B47EE7B004C24D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A13119B1B47EE7B004C24D0 /* Build configuration list for PBXNativeTarget "Population GraphsTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +598,7 @@
 				2A13119D1B47EE7B004C24D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A13119E1B47EE7B004C24D0 /* Build configuration list for PBXNativeTarget "Population GraphsUITests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +607,7 @@
 				2A1311A01B47EE7B004C24D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
