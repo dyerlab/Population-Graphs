@@ -26,6 +26,9 @@ class ViewController: NSViewController {
             
             
             theMapView.setRegion(popgraph.region(), animated: true)
+            for n in popgraph.nodes {
+                theMapView.addAnnotation(n)
+            }
         }
 
         

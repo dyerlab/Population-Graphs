@@ -10,29 +10,23 @@ import Foundation
 import Cocoa
 import MapKit
 
-class Node : SpatialObject {
-    var longitude: Double
-    var latitude: Double 
-    var label: String?
-    var neighbors: Array<Edge>
+class Node : NSObject, MKAnnotation {
+    var coordinate: CLLocationCoordinate2D
+    var title: String?
+    var neighbors: Array<Edge> = Array<Edge>()
     var degree: Int { return self.neighbors.count }
     
-    init() {
-        self.longitude = -77
-        self.latitude = 36
-        self.neighbors = Array<Edge>()
-        self.label = "Node"
+    override init() {
+        self.title = "Node"
+        self.coordinate = CLLocationCoordinate2D(latitude: 37.544851, longitude: -77454472 )
+        super.init()
     }
     
-    init( label: String ){
-        self.longitude = -77
-        self.latitude = 36
-        self.neighbors = Array<Edge>()
-        self.label = label
+    init( title: String ){
+        self.title = title
+        self.coordinate = CLLocationCoordinate2D(latitude: 37.544851, longitude: -77454472 )
+        super.init()
     }
     
-    func centroid() -> CLLocationCoordinate2D! {
-        return CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
-    }
     
 }

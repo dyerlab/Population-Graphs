@@ -13,26 +13,26 @@ import Foundation
 func makeGraphForViewing() -> SpatialGraph! {
     let graph: SpatialGraph = SpatialGraph()
     
-    let n1 = Node(label: "Bass Pro")
-    n1.longitude = -77.449333
-    n1.latitude = 37.710806
+    let n1 = Node(title: "Bass Pro")
+    n1.coordinate.longitude = -77.449333
+    n1.coordinate.latitude = 37.710806
     graph.nodes.append(n1)
     
-    let n2 = Node(label: "South Anna")
-    n2.longitude = -77.42339
-    n2.latitude = 37.800511
+    let n2 = Node(title: "South Anna")
+    n2.coordinate.longitude = -77.42339
+    n2.coordinate.latitude = 37.800511
     graph.nodes.append(n2)
     
 
-    let n3 = Node(label: "Kreggers")
-    n3.longitude = -77.437147
-    n3.latitude = 37.691362
+    let n3 = Node(title: "Kreggers")
+    n3.coordinate.longitude = -77.437147
+    n3.coordinate.latitude = 37.691362
     graph.nodes.append(n3)
     
 
-    let n4 = Node(label: "The Farm")
-    n4.longitude = -77.45053
-    n4.latitude = 37.741033
+    let n4 = Node(title: "The Farm")
+    n4.coordinate.longitude = -77.45053
+    n4.coordinate.latitude = 37.741033
     graph.nodes.append(n4)
     
     let e1 = Edge(n1: n1, n2: n2, weight: 1.0)
@@ -58,10 +58,10 @@ func loadGraphFromPlist( path: String ) -> SpatialGraph! {
         // load the nodes
         let nodes = myDict["Nodes"] as! NSDictionary
         for (name, values) in nodes {
-            let node: Node = Node(label: name as! String)
+            let node: Node = Node(title: name as! String)
             
-            node.longitude = (values as! NSDictionary).valueForKey("Longitude") as! Double
-            node.latitude =  (values as! NSDictionary).valueForKey("Latitude") as! Double 
+            node.coordinate.longitude = (values as! NSDictionary).valueForKey("Longitude") as! Double
+            node.coordinate.latitude =  (values as! NSDictionary).valueForKey("Latitude") as! Double 
             
             graph.nodes.append(node)
         }

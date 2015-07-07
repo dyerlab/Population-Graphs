@@ -10,10 +10,8 @@ import Foundation
 import MapKit
 
 protocol SpatialObject {
-    var longitude: Double { get set }
-    var latitude: Double { get set }
+    var coordiante: CLLocationCoordinate2D { get set }
     
-    func centroid() -> CLLocationCoordinate2D!
-    
+   
 }
 

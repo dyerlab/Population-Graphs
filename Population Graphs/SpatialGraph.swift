@@ -10,19 +10,8 @@ import Foundation
 import MapKit
 
 
-class SpatialGraph : Graph, SpatialObject {
-    var longitude: Double {
-        get {
-            return self.centroid().longitude
-        }
-        set {}
-    }
-    var latitude: Double {
-        get {
-            return self.centroid().latitude
-        }
-        set {}
-    }
+class SpatialGraph : Graph {
+    
     
     func centroid() -> CLLocationCoordinate2D! {
         var lat: Double = 0.0
@@ -30,8 +19,8 @@ class SpatialGraph : Graph, SpatialObject {
         let N = Double(self.nodes.count)
         
         for n in self.nodes {
-            lon += n.longitude
-            lat += n.latitude
+            lon += n.coordinate.longitude
+            lat += n.coordinate.latitude
         }
         lat /= N
         lon /= N
@@ -47,11 +36,11 @@ class SpatialGraph : Graph, SpatialObject {
         var maxLat: Double = -Double.infinity
         
         for n in self.nodes {
-            if n.longitude < minLon { minLon = n.longitude }
-            else if n.longitude > maxLon { maxLon = n.longitude }
+            if n.coordinate.longitude < minLon { minLon = n.coordinate.longitude }
+            else if n.coordinate.longitude > maxLon { maxLon = n.coordinate.longitude }
             
-            if n.latitude < minLat { minLat = n.latitude }
-            else if n.latitude > maxLat { maxLat = n.latitude }
+            if n.coordinate.latitude < minLat { minLat = n.coordinate.latitude }
+            else if n.coordinate.latitude > maxLat { maxLat = n.coordinate.latitude }
         }
         let span: MKCoordinateSpan = MKCoordinateSpanMake((maxLat-minLat), (maxLon-minLon) )
         

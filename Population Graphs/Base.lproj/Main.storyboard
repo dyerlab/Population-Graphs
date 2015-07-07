@@ -673,7 +673,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <mapView mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lXa-Mh-ydF">
+                            <mapView mapType="hybrid" translatesAutoresizingMaskIntoConstraints="NO" id="lXa-Mh-ydF">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                             </mapView>
                         </subviews>

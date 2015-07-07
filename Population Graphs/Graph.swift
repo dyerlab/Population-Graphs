@@ -23,7 +23,7 @@ class Graph {
     
     func getNode( label: String ) -> Node! {
         for n in self.nodes {
-            if n.label == label {
+            if n.title == label {
                 return n
             }
         }
@@ -32,10 +32,10 @@ class Graph {
     
     func getEdge( label1: String, label2: String ) -> Edge! {
         for e in self.edges {
-            if e.node1.label == label1 && e.node2.label == label2 {
+            if e.node1.title == label1 && e.node2.title == label2 {
                 return e
             }
-            else if e.node1.label == label2 && e.node2.label == label1 {
+            else if e.node1.title == label2 && e.node2.title == label1 {
                 return e
             }
         }
