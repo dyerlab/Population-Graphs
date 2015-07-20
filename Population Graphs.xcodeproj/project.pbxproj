@@ -34,6 +34,8 @@
 		2A1311C51B480C3C004C24D0 /* SpatialObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311C41B480C3C004C24D0 /* SpatialObject.swift */; };
 		2A1311C61B480C3C004C24D0 /* SpatialObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311C41B480C3C004C24D0 /* SpatialObject.swift */; };
 		2A1311C71B480C3C004C24D0 /* SpatialObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1311C41B480C3C004C24D0 /* SpatialObject.swift */; };
+		2A59AE3C1B5D63F400AFC425 /* Popgraph_Development_Profile.provisionprofile in Resources */ = {isa = PBXBuildFile; fileRef = 2A59AE3B1B5D63F400AFC425 /* Popgraph_Development_Profile.provisionprofile */; };
+		2A59AE3E1B5D643300AFC425 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A59AE3D1B5D643300AFC425 /* MapKit.framework */; };
 		2AE1A97F1B4810F40088DB40 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1A97E1B4810F40088DB40 /* Drawable.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,9 @@
 		2A1311BF1B47FB69004C24D0 /* Popgraph.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Popgraph.playground; sourceTree = "<group>"; };
 		2A1311C01B480953004C24D0 /* SpatialGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpatialGraph.swift; sourceTree = "<group>"; };
 		2A1311C41B480C3C004C24D0 /* SpatialObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpatialObject.swift; sourceTree = "<group>"; };
+		2A59AE3B1B5D63F400AFC425 /* Popgraph_Development_Profile.provisionprofile */ = {isa = PBXFileReference; lastKnownFileType = file; path = Popgraph_Development_Profile.provisionprofile; sourceTree = "<group>"; };
+		2A59AE3D1B5D643300AFC425 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2A59AE3F1B5D643300AFC425 /* Population Graphs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Population Graphs.entitlements"; sourceTree = "<group>"; };
 		2AE1A97E1B4810F40088DB40 /* Drawable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A59AE3E1B5D643300AFC425 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +112,7 @@
 		2A13116A1B47EE7B004C24D0 = {
 			isa = PBXGroup;
 			children = (
+				2A59AE3D1B5D643300AFC425 /* MapKit.framework */,
 				2A1311BF1B47FB69004C24D0 /* Popgraph.playground */,
 				2A1311751B47EE7B004C24D0 /* Population Graphs */,
 				2A1311871B47EE7B004C24D0 /* Population GraphsTests */,
@@ -127,6 +134,8 @@
 		2A1311751B47EE7B004C24D0 /* Population Graphs */ = {
 			isa = PBXGroup;
 			children = (
+				2A59AE3F1B5D643300AFC425 /* Population Graphs.entitlements */,
+				2A59AE3B1B5D63F400AFC425 /* Popgraph_Development_Profile.provisionprofile */,
 				2A1311A11B47EED0004C24D0 /* Components */,
 				2A1311761B47EE7B004C24D0 /* AppDelegate.swift */,
 				2A1311781B47EE7B004C24D0 /* ViewController.swift */,
@@ -278,6 +287,11 @@
 					2A1311721B47EE7B004C24D0 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 2D28XM92C4;
+						SystemCapabilities = {
+							com.apple.Maps.Mac = {
+								enabled = 1;
+							};
+						};
 					};
 					2A1311831B47EE7B004C24D0 = {
 						CreatedOnToolsVersion = 7.0;
@@ -314,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A59AE3C1B5D63F400AFC425 /* Popgraph_Development_Profile.provisionprofile in Resources */,
 				2A13117B1B47EE7B004C24D0 /* Assets.xcassets in Resources */,
 				2A13117E1B47EE7B004C24D0 /* Main.storyboard in Resources */,
 				2A1311AB1B47F374004C24D0 /* Network.plist in Resources */,
@@ -494,13 +509,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Rodney Dyer (2D28XM92C4)";
+				CODE_SIGN_ENTITLEMENTS = "Population Graphs/Population Graphs.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Population Graphs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.Population-Graphs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7d72341b-6005-4819-bf95-438e6bde98c4";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -508,13 +525,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Rodney Dyer (2D28XM92C4)";
+				CODE_SIGN_ENTITLEMENTS = "Population Graphs/Population Graphs.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Population Graphs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.Population-Graphs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7d72341b-6005-4819-bf95-438e6bde98c4";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
